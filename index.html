@@ -14,12 +14,26 @@
 </head>
 <body>
     <header>
-        
+        <div id="menu-mobile-mask"  class="d-block d-sm-none"></div>
+        <div id="menu-mobile" class="d-block d-sm-none">
+            <ul class="list-unstyled">
+                <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Tickets</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Schedule</a></li>
+            </ul>
+            <div class="bar-close">
+                <button type="button" class="btn btn-close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+            
+            
         <div class="container container-log">
             <img id="logotipo"src="img/orlando-logo.png" alt="Logo-Orlando">
         </div>
         <div class="header-black">
             <div class="container">
+                <input type="search" id="input-search-mobile"class="d-block d-sm-none" placeholder="search...">
                 <button id="btn-bars" type="button"><i class="fas fa-bars"></i></button>
                 <button id="btn-search" type="button"><i class="fas fa-search"></i></button>
                 <ul class="position-absolute end-0">
@@ -220,9 +234,12 @@
                                 <address class="d-none d-sm-block"><i class="fas fa-map-marker-alt"></i><span>618 E. South Street, Suite 510 <br>
                                 Orlando, FL 32801</span>
                                 </address>
-                                <a class="btn btn-footer .d-block .d-sm-none"><i class="fa-solid fa-location-dot"></i> Location</a>
-                                <a class="btn btn-footer .d-block .d-sm-none"><i class="fa-solid fa-phone"></i> Call</button>
-                                <p class="d-none d-sm-block"><a href="tel:1855ORLCITY"><i class="fas fa-phone-alt"></i>1.855.ORL.CITY</a></p>
+                                <div class="mobile-contact d-block d-sm-none">
+                                    <a class="btn btn-footer"><i class="fa-solid fa-location-dot"></i>  Location</a>
+                                    <a class="btn btn-footer"><i class="fa-solid fa-phone"></i> Call</button>
+                                    <p class="d-none d-sm-block"><a href="tel:1855ORLCITY"><i class="fas fa-phone-alt"></i>1.855.ORL.CITY</a></p>
+                                </div>
+                                
                                 <ul class="list-unstyled list-socials">
                                     <li>
                                         <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
